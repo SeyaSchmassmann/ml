@@ -25,14 +25,17 @@ The following instructions show how to work on the assignments and how to hand t
 ## Working on the assignments
 
 The assignments are released as Jupyter Notebooks. You can work on them in
-[**JupyterLab**](https://jupyter.org/). We provide you with two options to work on the assignments using JupyterLab and a standardized software stack.  
+[**JupyterLab**](https://jupyter.org/). We provide you with two options to work on the assignments using JupyterLab and a standardized software stack:
+
+- A) on a hosted JupyterLab server
+- B) on your own device
 
 **Important: for the graded assignments, only submissions that run / execute without error in this stack will be graded.**
 
 
 ### Option A : JHub 
 
-We provide you with the online platform JHub at [https://jhub.cs.technik.fhnw.ch](https://jhub.cs.technik.fhnw.ch). **Select the image** `sgi_ml_fs2024` when starting the service.
+We provide you with the online platform JHub at [https://jhub.cs.technik.fhnw.ch](https://jhub.cs.technik.fhnw.ch) and/or [https://jhub2.cs.technik.fhnw.ch](https://jhub2.cs.technik.fhnw.ch). **Select the image** `sgi_ml_fs2024` when starting the service.
 
 (Please be aware that on JHub only files that are in `/home/jovyan/work/persistent/` are safe from being deleted, when your server is being restarted, which can also occur due to maintenance reasons.)
 
@@ -45,20 +48,12 @@ Fork this repository to your own user space by pressing the fork button on the u
 
 **Add @marco.willi as a maintainer to your fork**. If you don't do this I won't see your submissions.
 
+**Set visibility of your fork to Private**. In your fork go to "Settings -> General -> Visibility, .. -> Project Visibility" and set to _Private_.
+
 
 #### 2. Clone your fork to your workspace in JHub
 
-In your fork on GitLab find the https-address (`MY_REPO_FORK_HTTPS_ADDRESS`)
-with which you can clone your Repo.  
-
-Open a terminal window in JupyterLab, `cd` into `/home/jovyan/work/persistent`
-and clone your fork with:  
-
-```
-git clone MY_REPO_FORK_HTTPS_ADDRESS
-```
-
-**Tipp**: You can use an access API token to avoid having to type your username and password, as well as confirming logins with 2FA.
+You can use an access API token to avoid having to type your username and password, as well as having to confirm logins with 2FA.
 
 To use an API token, on GitLab in your fork of the repository:
 
@@ -70,6 +65,13 @@ To use an API token, on GitLab in your fork of the repository:
 4. Select "api" under scopes
 5. Create token and save it  (`MY_ACCESS_TOKEN`)
 6. Find the address of your repo without the https prefix (`MY_REPO_FORK_ADDRESS_NO_HTTPS`)
+
+
+Open a terminal window in JupyterLab, `cd` into `/home/jovyan/work/persistent`.
+
+```
+cd /home/jovyan/work/persistent
+```
 
 Then you can clone the repository with the following command:
 
@@ -105,11 +107,11 @@ git push
 ```
 
 **By pushing your commits to your personal fork on GitLab you will submit the
-(graded) Assignments!**
+(graded) Assignments! The last commit before the deadline will be graded.**
 
 #### 4. Fetching new assignments 
 
-To fetch new assignments from the master repo do as follows:
+To fetch new assignments from the assigments/upstream repo do as follows:
 
 ```
 # add original repo as remote upstream 
@@ -157,6 +159,7 @@ Fork this repository to your own user space by pressing the fork button on the u
 
 **Add @marco.willi as a maintainer to your fork**. If you don't do this I won't see your submissions.
 
+**Set visibility of your fork to Private**. In your fork go to "Settings -> General -> Visibility, .. -> Project Visibility" and set to _Private_.
 
 #### 4. Clone your fork to your computer. 
 
@@ -236,12 +239,13 @@ git commit MY_FILE -m 'my commit message'
 git push
 ```
 
-**By pushing your commits to your personal fork on GitLab you will submit the graded Assignments!**
+**By pushing your commits to your personal fork on GitLab you will submit the
+(graded) Assignments! The last commit before the deadline will be graded.**
 
 
 #### 10. Fetching new assignments 
 
-To fetch new assignments from the master repo do as follows:
+To fetch new assignments from the assigments/upstream repo do as follows:
 
 ```
 # add original repo as remote upstream 
