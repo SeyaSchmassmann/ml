@@ -35,7 +35,7 @@ The assignments are released as Jupyter Notebooks. You can work on them in
 
 ### Option A : JHub 
 
-We provide you with the online platform JHub at [https://jhub.cs.technik.fhnw.ch](https://jhub.cs.technik.fhnw.ch) and/or [https://jhub2.cs.technik.fhnw.ch](https://jhub2.cs.technik.fhnw.ch). **Select the image** `sgi_ml_fs2024` when starting the service.
+We provide you with the online platform JHub at [https://jhub.cs.technik.fhnw.ch](https://jhub.cs.technik.fhnw.ch). **Select the image** `sgi_ml_fs2024` when starting the service.
 
 (Please be aware that on JHub only files that are in `/home/jovyan/work/persistent/` are safe from being deleted, when your server is being restarted, which can also occur due to maintenance reasons.)
 
@@ -123,6 +123,8 @@ git pull upstream main
 ```
 
 .. and add some merge message in case you have to merge.
+
+You can use the api token name/password when prompted for a username/password.
 
 
 
@@ -257,3 +259,5 @@ git pull upstream main
 ```
 
 .. and add some merge message in case you have to merge.
+
+You can use the api token name/password when prompted for a username/password.
